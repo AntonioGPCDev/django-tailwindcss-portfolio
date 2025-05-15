@@ -14,7 +14,7 @@ __pycache__/
 node_modules/
 
 # Ignorar archivos de settings locales si los tienes separados
-myproject/local_settings.py
+myportfolio/settings.py
 
 # Archivos estáticos compilados (ajusta si necesitas rastrearlos)
 static_collected/

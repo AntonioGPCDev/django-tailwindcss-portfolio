@@ -1,0 +1,298 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+
+<div class='bg-gray-800 text-white p-3 md:px-10 lg:px-20 xl:px-40 2xl:px-72'>
+    <div class='m-6'>
+        <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Sobre mí</p>
+        {% comment %} <p class='text-2xl font-bold grid place-items-center mb-8'>Sobre mí</p> {% endcomment %}
+        <p class='text-justify'>
+            &#128075; Hola,<br><br>
+
+            Mi nombre es Antonio y soy un desarrollador junior con muchas ganas de aprender y colaborar en proyectos en los que pueda aportar mi experiencia y desarrollar nuevas habilidades.<br><br>
+
+            Realicé el Grado de Ingeniería Informática en Ingeniería del Software en la Universidad de Extremadura, donde adquirí una sólida base en programación y desarrollo de software. Principalmente aprendí los lenguajes de progrmación C++, Java y Python.<br><br>
+            
+            Tras completar la universidad trabajé en una empresa dedicada a la gestión del ciclo integral del agua en pueblos de Extremadura. Mi trabajo consistió en realizar un desarrollo desde cero de una Oficina Virtual para que los abonados a este servicio pudieran realizar trámites adminastrativos
+            de forma online. Además podrían ver la información acerca de sus contratos, descargar y pagar facturas, notificar averías en el servicio y subir lecturas de su contador de agua.
+            Este desarrollo fue tanto para un entorno web como para una aplicación móvil. Para la aplicación móvil utilicé Flutter y para el desarrollo web utilicé Django Rest Framework, PostgreSQL y Docker.<br><br>
+
+            En mi tiempo libre me gusta aprender nuevas tecnologías y mejorar mis habilidades. Me encanta la programación y disfruto resolviendo problemas complejos. Me gusta trabajar en equipo y colaborar con otros desarrolladores para crear soluciones innovadoras.<br><br>
+            
+            Actualmente me encuentro aprendiendo y realizando proyectos con React y Node JS . Estos son los <span class='group text-cyan-200'><a href='/projects' class='bg-left-bottom bg-gradient-to-r from-cyan-300 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>proyectos.</a></span><br><br>
+            
+            Especialmente me encanta el desarrollo de backend para proyectos ya sea utilizando Django Rest Framework, FastAPI o Node JS.<br><br>
+            
+        </p>
+        <div class='my-10'>
+            <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Skills</p>
+            {% comment %} <p class='text-2xl font-bold grid place-items-center mb-8'>Skills</p> {% endcomment %}
+            <div class='grid grid-cols-1 md:grid-cols-2 md:space-x-4 lg:space-x-10'>
+                <div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">Desarrollo Web</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="html bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                        </div>  
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">Python</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="js bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>  
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">SQL</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="sql bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">Flutter</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="css bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>  
+                    </div>
+                    <div class='my-3'>
+                        <p class="progress-bar text-base font-medium my-3">JavaScript</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="py bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        {# --- Nueva Sección: Educación y Experiencia (Línea de Tiempo) --- #}
+        <div class='my-10'>
+            <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Educación y Experiencia</p>
+
+            <div class="relative wrap overflow-hidden p-10 h-full">
+                {# Línea vertical central #}
+                <div class="border-2-2 absolute border-opacity-20 border-gray-400 h-full border" style="left: 50%"></div>
+
+                {# Elemento 1 de la línea de tiempo (lado derecho) #}
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div> {# Espacio vacío para alinear #}
+                    {# Ícono/Punto en la línea #}
+                    <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
+                        {# Puedes poner un ícono SVG aquí si quieres #}
+                         <svg class="mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    {# Contenido de la tarjeta (lado derecho) #}
+                    <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="mb-3 font-bold text-blue-300 text-xl">Ambling Ingeniería y Servicios S.L.</h3>
+                        <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">oct. 2023 - dic. 2024</p>
+                         <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Desarrollo de Oficina Virtual con Django, Django Rest Framework, Flutter, PostgreSQL y Docker.</p>
+                         {# Enlace "Ver más" si aplica #}
+                         <a href="#" class="text-blue-400 hover:underline text-sm mt-3 inline-block">Ver más &rarr;</a>
+                    </div>
+                </div>
+
+                {# Elemento 2 de la línea de tiempo (lado izquierdo) #}
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div> {# Espacio vacío para alinear #}
+                     {# Ícono/Punto en la línea #}
+                    <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
+                        {# Puedes poner un ícono SVG aquí #}
+                         <svg class="mx-auto" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2V4a2 2 0 012-2h4a2 2 0 012 2v1h1a2 2 0 012 2v2a2 2 0 01-2 2h-1v2a2 2 0 01-2 2H7a2 2 0 01-2-2v-2H4a2 2 0 01-2-2V7a2 2 0 012-2h1zm3 5a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h.01a1 1 0 100-2H10zm3 0a1 1 0 000 2h.01a1 1 0 100-2H13z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    {# Contenido de la tarjeta (lado izquierdo) #}
+                    <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                         <h3 class="mb-3 font-bold text-blue-300 text-xl">Grupo de Ingeniería de Medios</h3>
+                         <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">mar. 2023 - may. 2023</p>
+                         <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Migración de web de Joomla a Wordpress y desarrollo de la nueva web corporativa.</p>
+                         {# Enlace "Ver más" si aplica #}
+                         <a href="#" class="text-blue-400 hover:underline text-sm mt-3 inline-block">Ver más &rarr;</a>
+                    </div>
+                </div>
+
+                 {# Puedes añadir más elementos de la línea de tiempo aquí alternando las clases right-timeline y left-timeline #}
+
+                 {# Elemento 3 (derecha) #}
+                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                     <div class="order-1 w-5/12"></div>
+                     <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
+                          <svg class="mx-auto" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v1H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2h-4V3a1 1 0 00-1-1zm-3 8a1 1 0 000 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                     </div>
+                     <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                         <h3 class="mb-3 font-bold text-blue-300 text-xl">Grado en Ingeniería Informática en Ingeniería del Software</h3>
+                         <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">sept. 2016 - jul. 2023</p>
+                         <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Aprendí sobre programación, bases de datos, desarrollo web y móvil, y gestión de proyectos.</p>
+                         {# Enlace "Ver más" si aplica #}
+                     </div>
+                 </div>
+
+                 {# Elemento 4 (izquierda) #}
+                 <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                     <div class="order-1 w-5/12"></div>
+                     <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
+                         <svg class="mx-auto" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.523 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                     </div>
+                     <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                         <h3 class="mb-3 font-bold text-blue-300 text-xl">BackEnd</h3>
+                         <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">jul. 2022 - dic. 2022</p>
+                         <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Aprendí sobre la creación y gestión de servidores utilizando Node.js y Express. El curso cubrió la configuración de servidores.</p>
+                          <a href="#" class="text-blue-400 hover:underline text-sm mt-3 inline-block">Ver más &rarr;</a>
+                     </div>
+                 </div>
+
+            </div>
+        </div>
+        {# --- Fin Nueva Sección --- #}
+
+    <style>
+        /* Estilos de barras de progreso (los que ya tenías) */
+        .progress-bar > div {
+             /* Asegúrate de que la animación no sobrescriba el ancho inline */
+             /* Puedes quitar la animación si prefieres controlar el ancho solo con style="width: X%" */
+        }
+        .html { animation: html-animation 3s normal forwards; }
+        @keyframes html-animation { 0% { width: 0%; } 100% { width: 95%; }}
+        .css { animation: css-animation 3s normal forwards; }
+        @keyframes css-animation { 0% { width: 0%; } 100% { width: 85%; }}
+        .js { animation: js-animation 3s normal forwards; }
+        @keyframes js-animation { 0% { width: 0%; } 100% { width: 70%; }}
+        .py { animation: py-animation 3s normal forwards; }
+        @keyframes py-animation { 0% { width: 0%; } 100% { width: 90%; }}
+        .sql { animation: sql-animation 3s normal forwards; }
+        @keyframes sql-animation { 0% { width: 0%; } 100% { width: 80%; }}
+
+
+        /* Estilos específicos para la línea de tiempo */
+        /* Ajustes para la línea vertical central */
+        .wrap {
+          /* Esto ayuda a contener los elementos absolutamente posicionados */
+        }
+        .wrap::after { /* Esto es un enfoque alternativo para la línea */
+             content: '';
+             position: absolute;
+             width: 2px; /* Ancho de la línea */
+             background-color: rgba(156, 163, 175, 0.2); /* Gris 400 con opacidad 20% */
+             top: 0;
+             bottom: 0;
+             left: 50%; /* Centra la línea */
+             margin-left: -1px; /* Ajusta para centrar exactamente */
+             z-index: 10; /* Asegura que esté detrás de los puntos */
+        }
+
+        /* Ajustes para los elementos de la línea de tiempo */
+        .left-timeline .order-1, .right-timeline .order-1 {
+             /* Tailwind ya maneja el width y el order */
+             /* Puedes añadir padding-right al de la izquierda y padding-left al de la derecha si necesitas más espacio entre la tarjeta y el centro */
+        }
+
+        /* Posicionamiento responsive para la línea de tiempo en móviles */
+        @media (max-width: 768px) { /* Menos de md */
+            .wrap::after {
+                left: 20px; /* Mueve la línea a la izquierda en pantallas pequeñas */
+                 margin-left: 0;
+            }
+            .left-timeline, .right-timeline {
+                flex-direction: column; /* Apila elementos */
+                align-items: flex-start; /* Alinea a la izquierda */
+                margin-bottom: 20px; /* Espacio entre elementos apilados */
+            }
+             .left-timeline .order-1, .right-timeline .order-1 {
+                 width: 100%; /* Tarjetas ocupan todo el ancho */
+             }
+            .z-20 { /* Ícono/Punto */
+                 position: absolute; /* Posicionamiento absoluto respecto al item */
+                 left: 12px; /* Alinea el ícono con la línea */
+                 margin-top: 10px; /* Espacio desde arriba del item */
+            }
+            .left-timeline .order-1 { /* Tarjeta izquierda */
+                 margin-left: 30px; /* Deja espacio para el ícono y la línea */
+                 padding-left: 15px; /* Ajusta padding si es necesario */
+            }
+             .right-timeline .order-1 { /* Tarjeta derecha */
+                 margin-left: 30px; /* Deja espacio para el ícono y la línea */
+                 padding-left: 15px; /* Ajusta padding si es necesario */
+            }
+        }
+
+    </style>
+
+    {% comment %} <script>
+        let html_progress = 0;
+        let html_invervalSpeed = 10;
+        let html_incrementSpeed = 1;
+        document.addEventListener("DOMContentLoaded", function(){
+            let html_bar = document.querySelector('.html');
+            html_progressInterval = setInterval(function(){
+            html_progress += html_incrementSpeed;
+            html_bar.style.width = html_progress + "%";
+            if(html_progress >= 95){
+                clearInterval(html_progressInterval);
+            }
+        }, html_invervalSpeed);
+    });
+
+        let css_progress = 0;
+        let css_invervalSpeed = 10;
+        let css_incrementSpeed = 1;
+        document.addEventListener("DOMContentLoaded", function(){
+            let css_bar = document.querySelector('.css');
+            css_progressInterval = setInterval(function(){
+            css_progress += css_incrementSpeed;
+            css_bar.style.width = css_progress + "%";
+            if(css_progress >= 80){
+                clearInterval(css_progressInterval);
+            }
+        }, css_invervalSpeed);
+    });
+
+        let js_progress = 0;
+        let js_invervalSpeed = 10;
+        let js_incrementSpeed = 1;
+        document.addEventListener("DOMContentLoaded", function(){
+            let js_bar = document.querySelector('.js');
+            js_progressInterval = setInterval(function(){
+            js_progress += js_incrementSpeed;
+            js_bar.style.width = js_progress + "%";
+            if(js_progress >= 60){
+                clearInterval(js_progressInterval);
+            }
+        }, js_invervalSpeed);
+    });
+
+    let py_progress = 0;
+    let py_invervalSpeed = 10;
+    let py_incrementSpeed = 1;
+    document.addEventListener("DOMContentLoaded", function(){
+        let py_bar = document.querySelector('.py');
+        py_progressInterval = setInterval(function(){
+        py_progress += py_incrementSpeed;
+        py_bar.style.width = py_progress + "%";
+        if(py_progress >= 80){
+            clearInterval(py_progressInterval);
+        }
+    }, py_invervalSpeed);
+});
+
+    let sql_progress = 0;
+    let sql_invervalSpeed = 10;
+    let sql_incrementSpeed = 1;
+        document.addEventListener("DOMContentLoaded", function(){
+        let sql_bar = document.querySelector('.sql');
+        sql_progressInterval = setInterval(function(){
+        sql_progress += sql_incrementSpeed;
+        sql_bar.style.width = sql_progress + "%";
+        if(sql_progress >= 85){
+            clearInterval(sql_progressInterval);
+        }
+    }, sql_invervalSpeed);
+});
+
+    </script> {% endcomment %}
+</div>
+
+{% endblock %}
