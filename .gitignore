@@ -1,0 +1,25 @@
+# Ignorar entorno virtual
+venv/
+env/
+
+# Ignorar base de datos SQLite
+db.sqlite3
+
+# Ignorar caché de Python
+__pycache__/
+*.pyc
+*.log
+
+# Ignorar dependencias de Node.js (para Tailwind)
+node_modules/
+
+# Ignorar archivos de settings locales si los tienes separados
+myproject/local_settings.py
+
+# Archivos estáticos compilados (ajusta si necesitas rastrearlos)
+static_collected/
+staticfiles/
+# theme/static/css/output.css # Descomenta si no quieres rastrear el CSS compilado
+
+# Ignorar variables de entorno si usas un archivo .env
+.env
