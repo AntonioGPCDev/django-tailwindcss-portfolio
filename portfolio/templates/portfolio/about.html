@@ -4,6 +4,8 @@
 
 {% block content %}
 
+{% load static %}
+
 <div class='bg-gray-800 text-white p-3 md:px-10 lg:px-20 xl:px-40 2xl:px-72'>
     <div class='m-6'>
         <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Sobre mí</p>
@@ -15,9 +17,10 @@
 
             Realicé el Grado de Ingeniería Informática en Ingeniería del Software en la Universidad de Extremadura, donde adquirí una sólida base en programación y desarrollo de software. Principalmente aprendí los lenguajes de progrmación C++, Java y Python.<br><br>
             
-            Tras completar la universidad trabajé en una empresa dedicada a la gestión del ciclo integral del agua en pueblos de Extremadura. Mi trabajo consistió en realizar un desarrollo desde cero de una Oficina Virtual para que los abonados a este servicio pudieran realizar trámites adminastrativos
-            de forma online. Además podrían ver la información acerca de sus contratos, descargar y pagar facturas, notificar averías en el servicio y subir lecturas de su contador de agua.
-            Este desarrollo fue tanto para un entorno web como para una aplicación móvil. Para la aplicación móvil utilicé Flutter y para el desarrollo web utilicé Django Rest Framework, PostgreSQL y Docker.<br><br>
+            Tras completar la universidad trabajé en una empresa dedicada a la gestión del ciclo integral del agua en pueblos de Extremadura. <br>
+            Mi trabajo consistió en realizar un desarrollo desde cero de una Oficina Virtual para que los abonados a este servicio puedan realizar trámites adminastrativos
+            de forma online. Además, pueden ver la información acerca de sus contratos, descargar y pagar facturas, notificar averías en el servicio y subir lecturas de su contador de agua.<br>
+            Este desarrollo fue tanto para un entorno web como para una aplicación móvil. Para la aplicación móvil utilicé Flutter y para el desarrollo web utilicé Django, Django Rest Framework, PostgreSQL y Docker.<br><br>
 
             En mi tiempo libre me gusta aprender nuevas tecnologías y mejorar mis habilidades. Me encanta la programación y disfruto resolviendo problemas complejos. Me gusta trabajar en equipo y colaborar con otros desarrolladores para crear soluciones innovadoras.<br><br>
             
@@ -32,15 +35,21 @@
             <div class='grid grid-cols-1 md:grid-cols-2 md:space-x-4 lg:space-x-10'>
                 <div>
                     <div class='my-3'>
-                        <p class="text-base font-medium my-3">Desarrollo Web</p>
+                        <p class="text-base font-medium my-3">Python</p>
                         <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
-                            <div class="html bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                            <div class="py bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
                         </div>  
                     </div>
                     <div class='my-3'>
-                        <p class="text-base font-medium my-3">Python</p>
+                        <p class="text-base font-medium my-3">Java</p>
                         <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
-                            <div class="js bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                            <div class="java bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                        </div>  
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">C++</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="cplus bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
                         </div>  
                     </div>
                     <div class='my-3'>
@@ -53,101 +62,111 @@
 
                 <div>
                     <div class='my-3'>
-                        <p class="text-base font-medium my-3">Flutter</p>
+                        <p class="progress-bar text-base font-medium my-3">NodeJS</p>
                         <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
-                            <div class="css bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                            <div class="nodejs bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
                         </div>  
                     </div>
                     <div class='my-3'>
-                        <p class="progress-bar text-base font-medium my-3">JavaScript</p>
+                        <p class="text-base font-medium my-3">Desarrollo Web</p>
                         <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
-                            <div class="py bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                            <div class="dweb bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full"></div>
+                        </div>  
+                    </div>
+                    <div class='my-3'>
+                        <p class="progress-bar text-base font-medium my-3">React</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="react bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>  
+                    </div>
+                    <div class='my-3'>
+                        <p class="text-base font-medium my-3">Flutter</p>
+                        <div class="progress-bar w-full md:w-80 lg:w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="flutter bg-gradient-to-r from-cyan-300 to-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
                         </div>  
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    
 
         {# --- Nueva Sección: Educación y Experiencia (Línea de Tiempo) --- #}
         <div class='my-10'>
             <p style="font-family: Poppins-Bold" class='text-4xl font-extrabold py-5 text-center md:text-start'>Educación y Experiencia</p>
-
             <div class="relative wrap overflow-hidden p-10 h-full">
-                {# Línea vertical central #}
-                <div class="border-2-2 absolute border-opacity-20 border-gray-400 h-full border" style="left: 50%"></div>
-
                 {# Elemento 1 de la línea de tiempo (lado derecho) #}
                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
                     <div class="order-1 w-5/12"></div> {# Espacio vacío para alinear #}
                     {# Ícono/Punto en la línea #}
-                    <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
-                        {# Puedes poner un ícono SVG aquí si quieres #}
-                         <svg class="mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-9 h-9 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="mx-auto w-7 h-7">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
                         </svg>
                     </div>
+
                     {# Contenido de la tarjeta (lado derecho) #}
                     <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
                         <h3 class="mb-3 font-bold text-blue-300 text-xl">Ambling Ingeniería y Servicios S.L.</h3>
                         <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">oct. 2023 - dic. 2024</p>
-                         <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Desarrollo de Oficina Virtual con Django, Django Rest Framework, Flutter, PostgreSQL y Docker.</p>
-                         {# Enlace "Ver más" si aplica #}
-                         <a href="#" class="text-blue-400 hover:underline text-sm mt-3 inline-block">Ver más &rarr;</a>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Desarrollo de Oficina Virtual para clientes del servico del agua de la Mancomunidad de Aguas del Ayuela para hacer trámites administrativos de forma online (alta/baja del servicio, cambio de domiciliación, cambio de titularidad), notificar averías, añadir lecturas de contador de agua.</p>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2 flex flex-wrap items-center gap-2">
+                            <span>Tecnologías utilizadas:</span>          
+                            <img src="{% static 'portfolio\icons\django-svgrepo-com.svg' %}" alt="Django" class="w-20 h-20 inline" title="Django" />
+                            <img src="{% static 'portfolio\icons\django-svgrepo-com.svg' %}" alt="Django REST Framework" class="w-20 h-20 inline" title="Django REST Framework" />
+                            <img src="{% static 'portfolio\icons\flutter-svgrepo-com.svg' %} " alt="Flutter" class="w-20 h-20 inline" title="Flutter" />
+                            <img src="{% static 'portfolio\icons\postgresql-logo-svgrepo-com.svg' %}" alt="PostgreSQL" class="w-10 h-10 inline" title="PostgreSQL" />
+                            <img src="{% static 'portfolio\icons\docker-svgrepo-com.svg' %}" alt="Docker" class="w-20 h-20 inline" title="Docker" />
+                        </p>
+                        {# Enlace "Ver más" si aplica #}
+                        <a href="#" class="text-blue-400 hover:underline text-sm mt-3 inline-block">Ver más &rarr;</a>
                     </div>
                 </div>
-
                 {# Elemento 2 de la línea de tiempo (lado izquierdo) #}
                 <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div class="order-1 w-5/12"></div> {# Espacio vacío para alinear #}
                      {# Ícono/Punto en la línea #}
-                    <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
-                        {# Puedes poner un ícono SVG aquí #}
-                         <svg class="mx-auto" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2V4a2 2 0 012-2h4a2 2 0 012 2v1h1a2 2 0 012 2v2a2 2 0 01-2 2h-1v2a2 2 0 01-2 2H7a2 2 0 01-2-2v-2H4a2 2 0 01-2-2V7a2 2 0 012-2h1zm3 5a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h.01a1 1 0 100-2H10zm3 0a1 1 0 000 2h.01a1 1 0 100-2H13z" clip-rule="evenodd"></path></svg>
+                    <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-9 h-9 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="mx-auto w-7 h-7">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                        </svg>
                     </div>
+
                     {# Contenido de la tarjeta (lado izquierdo) #}
                     <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
                          <h3 class="mb-3 font-bold text-blue-300 text-xl">Grupo de Ingeniería de Medios</h3>
+                         <h4 class="mb-2 font-medium text-blue-300">Prácticas Universitarias</h4>
                          <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">mar. 2023 - may. 2023</p>
                          <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Migración de web de Joomla a Wordpress y desarrollo de la nueva web corporativa.</p>
                          {# Enlace "Ver más" si aplica #}
-                         <a href="#" class="text-blue-400 hover:underline text-sm mt-3 inline-block">Ver más &rarr;</a>
+                         {% comment %} <a href="#" class="text-blue-400 hover:underline text-sm mt-3 inline-block">Ver más &rarr;</a> {% endcomment %}
                     </div>
                 </div>
-
                  {# Puedes añadir más elementos de la línea de tiempo aquí alternando las clases right-timeline y left-timeline #}
-
                  {# Elemento 3 (derecha) #}
                  <div class="mb-8 flex justify-between items-center w-full right-timeline">
                      <div class="order-1 w-5/12"></div>
-                     <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
-                          <svg class="mx-auto" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v1H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2h-4V3a1 1 0 00-1-1zm-3 8a1 1 0 000 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
-                     </div>
+                     <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-9 h-9 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="mx-auto w-7 h-7">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                        </svg>
+                    </div>
+
                      <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
                          <h3 class="mb-3 font-bold text-blue-300 text-xl">Grado en Ingeniería Informática en Ingeniería del Software</h3>
                          <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">sept. 2016 - jul. 2023</p>
                          <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Aprendí sobre programación, bases de datos, desarrollo web y móvil, y gestión de proyectos.</p>
-                         {# Enlace "Ver más" si aplica #}
                      </div>
                  </div>
-
-                 {# Elemento 4 (izquierda) #}
-                 <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                     <div class="order-1 w-5/12"></div>
-                     <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-8 h-8 rounded-full">
-                         <svg class="mx-auto" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.523 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
-                     </div>
-                     <div class="order-1 bg-gray-700 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                         <h3 class="mb-3 font-bold text-blue-300 text-xl">BackEnd</h3>
-                         <p class="text-sm leading-snug tracking-wide text-white text-opacity-100">jul. 2022 - dic. 2022</p>
-                         <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 mt-2">Aprendí sobre la creación y gestión de servidores utilizando Node.js y Express. El curso cubrió la configuración de servidores.</p>
-                          <a href="#" class="text-blue-400 hover:underline text-sm mt-3 inline-block">Ver más &rarr;</a>
-                     </div>
-                 </div>
-
             </div>
         </div>
         {# --- Fin Nueva Sección --- #}
+    </div>
 
     <style>
         /* Estilos de barras de progreso (los que ya tenías) */
@@ -155,16 +174,22 @@
              /* Asegúrate de que la animación no sobrescriba el ancho inline */
              /* Puedes quitar la animación si prefieres controlar el ancho solo con style="width: X%" */
         }
-        .html { animation: html-animation 3s normal forwards; }
-        @keyframes html-animation { 0% { width: 0%; } 100% { width: 95%; }}
-        .css { animation: css-animation 3s normal forwards; }
-        @keyframes css-animation { 0% { width: 0%; } 100% { width: 85%; }}
-        .js { animation: js-animation 3s normal forwards; }
-        @keyframes js-animation { 0% { width: 0%; } 100% { width: 70%; }}
+        .dweb { animation: dweb-animation 3s normal forwards; }
+        @keyframes dweb-animation { 0% { width: 0%; } 100% { width: 75%; }}
+        .flutter { animation: flutter-animation 3s normal forwards; }
+        @keyframes flutter-animation { 0% { width: 0%; } 100% { width: 60%; }}
+        .nodejs { animation: nodejs-animation 3s normal forwards; }
+        @keyframes nodejs-animation { 0% { width: 0%; } 100% { width: 65%; }}
         .py { animation: py-animation 3s normal forwards; }
         @keyframes py-animation { 0% { width: 0%; } 100% { width: 90%; }}
+        .java { animation: java-animation 3s normal forwards; }
+        @keyframes java-animation { 0% { width: 0%; } 100% { width: 75%; }}
+        .cplus { animation: cplus-animation 3s normal forwards; }
+        @keyframes cplus-animation { 0% { width: 0%; } 100% { width: 75%; }}
         .sql { animation: sql-animation 3s normal forwards; }
         @keyframes sql-animation { 0% { width: 0%; } 100% { width: 80%; }}
+        .react { animation: react-animation 3s normal forwards; }
+        @keyframes react-animation { 0% { width: 0%; } 100% { width: 50%; }}
 
 
         /* Estilos específicos para la línea de tiempo */
@@ -220,79 +245,6 @@
         }
 
     </style>
-
-    {% comment %} <script>
-        let html_progress = 0;
-        let html_invervalSpeed = 10;
-        let html_incrementSpeed = 1;
-        document.addEventListener("DOMContentLoaded", function(){
-            let html_bar = document.querySelector('.html');
-            html_progressInterval = setInterval(function(){
-            html_progress += html_incrementSpeed;
-            html_bar.style.width = html_progress + "%";
-            if(html_progress >= 95){
-                clearInterval(html_progressInterval);
-            }
-        }, html_invervalSpeed);
-    });
-
-        let css_progress = 0;
-        let css_invervalSpeed = 10;
-        let css_incrementSpeed = 1;
-        document.addEventListener("DOMContentLoaded", function(){
-            let css_bar = document.querySelector('.css');
-            css_progressInterval = setInterval(function(){
-            css_progress += css_incrementSpeed;
-            css_bar.style.width = css_progress + "%";
-            if(css_progress >= 80){
-                clearInterval(css_progressInterval);
-            }
-        }, css_invervalSpeed);
-    });
-
-        let js_progress = 0;
-        let js_invervalSpeed = 10;
-        let js_incrementSpeed = 1;
-        document.addEventListener("DOMContentLoaded", function(){
-            let js_bar = document.querySelector('.js');
-            js_progressInterval = setInterval(function(){
-            js_progress += js_incrementSpeed;
-            js_bar.style.width = js_progress + "%";
-            if(js_progress >= 60){
-                clearInterval(js_progressInterval);
-            }
-        }, js_invervalSpeed);
-    });
-
-    let py_progress = 0;
-    let py_invervalSpeed = 10;
-    let py_incrementSpeed = 1;
-    document.addEventListener("DOMContentLoaded", function(){
-        let py_bar = document.querySelector('.py');
-        py_progressInterval = setInterval(function(){
-        py_progress += py_incrementSpeed;
-        py_bar.style.width = py_progress + "%";
-        if(py_progress >= 80){
-            clearInterval(py_progressInterval);
-        }
-    }, py_invervalSpeed);
-});
-
-    let sql_progress = 0;
-    let sql_invervalSpeed = 10;
-    let sql_incrementSpeed = 1;
-        document.addEventListener("DOMContentLoaded", function(){
-        let sql_bar = document.querySelector('.sql');
-        sql_progressInterval = setInterval(function(){
-        sql_progress += sql_incrementSpeed;
-        sql_bar.style.width = sql_progress + "%";
-        if(sql_progress >= 85){
-            clearInterval(sql_progressInterval);
-        }
-    }, sql_invervalSpeed);
-});
-
-    </script> {% endcomment %}
 </div>
 
 {% endblock %}
